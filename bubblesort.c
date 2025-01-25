@@ -1,8 +1,24 @@
 #include <stdio.h>
 const int MAX=9;
 
-void printValues(int*);
-void sort(int*);
+// print stuff
+void printValues(int *array); {
+	for (int i = 0; i < MAX; i++) {
+		printf("%d", array[i]);
+	}
+// sort array
+void sort(int *array) {
+	for (int i = 0; i < MAX - 1; i++) {
+		for (int j = 0; j < MAX - i - 1; j++) {
+			if (array[j] > array[j + 1]) {
+				swap($array[j], &array[j + 1]);
+				printValues(array);
+			}
+		}
+	}
+}
+
+// swap int
 void swap(int*, int*);
 
 int main(){
