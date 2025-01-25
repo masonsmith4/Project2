@@ -19,7 +19,11 @@ void sort(int *array) {
 }
 
 // swap int
-void swap(int*, int*);
+void swap(int *a, int *b);{
+  int temp = *a;
+  *b = temp;
+  *a = *b;
+}
 
 int main(){
   int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
