@@ -4,16 +4,14 @@ const int MAX=9;
 // print stuff
 void printValues(int *array); {
 	for (int i = 0; i < MAX; i++) {
-		printf("%d", array[i]);
+		printf("%d",  array[i]);
 	}
 // sort array
+// ehhh
 void sort(int *array) {
 	for (int i = 0; i < MAX - 1; i++) {
 		for (int j = 0; j < MAX - i - 1; j++) {
-			if (array[j] > array[j + 1]) {
-				swap($array[j], &array[j + 1]);
-				printValues(array);
-			}
+// i really cant figure this out ????
 		}
 	}
 }
