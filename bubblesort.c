@@ -9,7 +9,7 @@ void printValues(int *array); {
 }
 // sort array
 // ehhh
-void sort(int *array) {
+void sort(int *array) {}
 	for (int i = 0; i < MAX - 1; i++) {
 		for (int j = 0; j < MAX - i - 1; j++) {
       if (array[j] > array[j - 1]) {
